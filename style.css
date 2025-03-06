@@ -5,3 +5,23 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+#header {
+    background-color: #18091f;
+    color: white;
+    height: 60px ;
+}
+.nav > a {
+    color: white
+}
+#hero {
+    font-size: 22px;
+    color: rgb(14, 2, 2)
+}
+#hero > h1 {
+    font-size: 80px;
+}
+#cta {
+    background-color: #5d09a1;
+    color: white;
+    text-decoration: none;
+}
