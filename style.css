@@ -5,23 +5,39 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+a:hover {
+    text-decoration: underline;
+}
+#header, .nav > a, #cta {
+    color:white;
+}
 #header {
     background-color: #18091f;
-    color: white;
     height: 60px ;
 }
-.nav > a {
-    color: white
-}
+
 #hero {
     font-size: 22px;
-    color: rgb(14, 2, 2)
+    color: rgb(14, 2, 2);
 }
 #hero > h1 {
     font-size: 80px;
 }
 #cta {
     background-color: #5d09a1;
-    color: white;
+}
+a {
     text-decoration: none;
+}
+
+#cta:hover {
+    color:#5d09a1;
+    background-color: white;
+}
+#products {
+    background-color: #ecd7ff;
+}
+.card {
+    background-color: white;
+    width: fit-content;
 }
