@@ -4,6 +4,9 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    margin: 0%;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 a:hover {
     text-decoration: underline;
@@ -14,17 +17,44 @@ a:hover {
 #header {
     background-color: #18091f;
     height: 60px ;
+    padding: 10px;
+    padding-top: 40px;
 }
 
+.logo {
+    float: left;
+}
+.nav {
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav > a {
+    text-decoration: none;
+}
+.nav > a:hover {
+    border-bottom: 2px solid;
+}
 #hero {
     font-size: 22px;
     color: rgb(14, 2, 2);
+    margin: 10% auto 10% auto;
+    width:fit-content;
 }
 #hero > h1 {
     font-size: 80px;
 }
 #cta {
     background-color: #5d09a1;
+    float: right;
+}
+.button {
+    display:block;
+    width: fit-content;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    border-width:2px;
+    border-style: solid;
 }
 a {
     text-decoration: none;
@@ -36,8 +66,33 @@ a {
 }
 #products {
     background-color: #ecd7ff;
+    padding: 20vh 40px 20vh 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .card {
     background-color: white;
-    width: fit-content;
+    width: 20%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 5px 5px 20px #b7a2c7;
+}
+#testimonials {
+    padding: 20vh 40px 20vh 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.quote::before, .quote::after{
+    content:"\"";
+    font-weight: bolder;
+    font-size: 30px;
+}
+.attribution {
+    font-weight: bolder;
+}
+.attribution::before {
+    content: "-";
 }
